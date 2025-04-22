@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.what-me-box {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  border: 1px solid;
+  border-color: aqua;
+  border-radius: 15px;
+  margin: 25px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+p {
+  padding: 25px;
+}
