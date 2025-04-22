@@ -1,0 +1,72 @@
+body{
+  background: black;
+  color: white;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.container > div{
+  width: 50%;
+}
+
+.photo-profile{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+
+.location{
+  background: rgb(16, 13, 13);
+  padding: 20px;
+}
+
+.country, .province, .city{
+  padding: 10px;
+  display: flex;
+  border: 1px solid rgb(49, 64, 27);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+p > span{
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.image-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-location>span{
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 75%;
+  color: rgb(9, 9, 7);
+  font-weight: bold;
+}
+
+.photo-location, .photo-hobbies{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.contact{
+  background-color: rgb(19, 21, 21);
+  padding: 15px;
+}
+
+.contact>p{
+  font-weight: bold;
+}
