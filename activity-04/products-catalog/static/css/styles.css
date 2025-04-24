@@ -1,0 +1,36 @@
+
+.image-product, img{
+  width: 150px;
+}
+
+button{
+  cursor: pointer;
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button{
+  margin: 10px;
+  cursor: pointer;
+}
+
+table{
+  text-align: center;
+}
+
+span{
+  margin-right: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: magenta;
+}
