@@ -1,0 +1,134 @@
+body{
+  background-color: rgb(36, 37, 39);
+  color: aliceblue;
+}
+
+.header-box img{
+  width: 150px;
+  border-radius: 25px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-box{
+  padding: 10px;
+}
+
+.header-box p{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+legend{
+  color: aquamarine;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.input-box{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-box div{
+  width: 100%;
+  margin: 10px;
+}
+
+.input-box label{
+  width: 100%;
+}
+
+input{
+  width: 100%;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+  height: 20px;
+}
+
+select{
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+}
+
+.select-mark div{
+  display: flex;
+  margin: 10px;
+  text-align: center;
+}
+
+.red, .black, .white, .brown{
+  width: 100px;
+  margin: 5px;
+}
+
+.red{
+  background-color: red;
+}
+
+.black{
+  background-color: black;
+}
+
+.white{
+  background-color: white;
+}
+
+.brown{
+  background-color: brown;
+}
+
+.select-mark label{
+  margin-right: 10px;
+  width: 150px;
+}
+
+.check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check input{
+  width: 50px;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 200px;
+  color: rgb(47, 22, 206);
+  background-color: cadetblue;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover{
+  color: magenta;
+  background-color: green;
+}
