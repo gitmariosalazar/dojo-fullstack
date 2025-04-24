@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Orders</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-box">
+        <img src="./static/images/tech-gadgets.jpg" alt="" />
+      </div>
+      <div class="header-box">
+        <p>Products TECH Delivery</p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <form method="POST" action="https://eoeia4af7nj8prb.m.pipedream.net">
+          <fieldset>
+            <legend>Customer Information</legend>
+            <div class="input-box">
+             <div>
+               <label for="firstName">First Name </label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Type your First Name"
+              />
+             </div>
+             <div>
+               <label for="lastName">Last Name </label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Type your Last Name"
+              />
+             </div>
+            </div>
+            <div class="input-box">
+             <div>
+               <label for="phone">Phone Number </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="0994532438"
+              />
+             </div>
+             <div>
+               <label for="email">Email Address </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="mariosalazar@gmail.com"
+              />
+             </div>
+            </div>
+            <div class="input-box">
+              <div>
+                <label for="city">City</label>
+              <input type="city" name="city" id="name" placeholder="Ibarra" />
+              </div>
+             <div>
+               <label for="postalCode">Postal Code: </label>
+              <input
+                type="number"
+                name="postalCode"
+                id="postalCode"
+                placeholder="104001"
+              />
+             </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Product Details</legend>
+            <div class="input-box">
+              <label for="product">Select Product</label>
+              <select name="product" id="product">
+                <option value="1">Laptop Desktop</option>
+                <option value="2">Cell Phone</option>
+                <option value="3">Headphones</option>
+                <option value="4">Mouse</option>
+              </select>
+            </div>
+            
+            <div>
+               <div>
+                <h4>Select Mark</h4>
+              </div>
+            </div>
+            <div class="select-mark">
+              <div>
+                <label for="dell">Dell</label>
+                <input type="radio" id="dell" name="type_mark" value="Dell">
+              </div>
+               <div>
+                <label for="asus">A</label>
+                <input type="radio" id="asus" name="type_mark" value="Asus">
+              </div>
+               <div>
+                <label for="toshiba">Toshiba</label>
+                <input type="radio" id="toshiba" name="type_mark" value="Toshiba">
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Select Color</h4>
+              </div>
+              <div class="select-mark">
+                <div>
+                  <label for="red">Red</label>
+                  <input type="checkbox" name="red" id="red" />
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" id="quantity" name="quantity" />
+                  <span class="red">
+
+                  </spa>
+                </div>
+              </div>
+
+              <div class="select-mark">
+                <div>
+                  <label for="black">Black</label>
+                <input type="checkbox" name="black" id="black" />
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" />
+                
+                <span class="black">
+
+                </span>
+                </div>
+              </div>
+
+              <div class="select-mark">
+                <div>
+                  <label for="white">White</label>
+                <input type="checkbox" id="white" name="white" />
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" />
+                <span class="white"></span>
+                </div>
+              </div>
+
+              <div class="select-mark">
+                <div>
+                  <label for="brown">Brown</label>
+                <input type="checkbox" id="brown" name="brown" />
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" name="quantity" />
+                <span class="brown"></span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Information</legend>
+            <div class="input-box">
+              <div>
+                <label for="payment-fullname">Full Card Name </label>
+              <input
+                type="text"
+                id="payment-fullname"
+                name="payment-fullname"
+                placeholder="Mario Salazar"
+              />
+              </div>
+            </div>
+            <div class="input-box">
+             <div>
+               <label for="card-number">Card Number </label>
+              <input
+                type="text"
+                id="card-number"
+                name="card-number"
+                placeholder="1234 5678 9012 3456"
+                required
+                maxlength="19"
+              />
+             </div>
+            </div>
+            <div class="input-box">
+              <div>
+                <label for="expiry-date">Expiry Date</label>
+              <input
+                type="text"
+                id="expiry-date"
+                name="expiry-date"
+                placeholder="MM/AA"
+                required
+                maxlength="5"
+              />
+              </div>
+             <div>
+               <label for="cvv">CVV</label>
+              <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="123"
+                required
+                maxlength="4"
+              />
+             </div>
+            </div>
+          </fieldset>
+          <div class="check">
+            <input type="checkbox" />
+            <p>Billing is same as shipping information</p>
+          </div>
+          <div class="btn">
+            <button type="submit">Pay Now</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
