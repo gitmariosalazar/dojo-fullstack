@@ -1,0 +1,245 @@
+body{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 80%;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.logo-home img{
+  width: 110px;
+}
+
+header{
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(17, 17, 17);
+  position: relative;
+}
+
+.btn-open{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: black;
+  color: aqua;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-open:hover{
+  background-color: gray;
+  color: blueviolet;
+}
+
+.header-box{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+h1{
+  font-size: 45px;
+  color: rgb(50, 70, 175);
+  margin-top: 70px;
+}
+
+.date-letter{
+  position: absolute;
+  top: 0;
+  width: 40%;
+  left: 0;
+  border-radius: 7px;
+}
+
+.date{
+  margin-left: 40%;
+}
+
+.logo-home{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text-home{
+  color: brown;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.article-first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-info{
+  width: 60%;
+  padding: 20px;
+  margin: 15px;
+  background-color: rgb(20, 20, 20);
+  position: relative;
+}
+
+.span-h{
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: blueviolet;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.title-article{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.article-description{
+  text-align: justify;
+}
+
+.article-first img{
+  width: 40%;
+  height: 260px;
+  padding: 10px;
+}
+
+.article-vertical img{
+  width: 100%;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.article-vertical{
+  padding: 20px;
+}
+
+.vertical-info{
+  position: relative;
+  width: 100%;
+}
+
+.span-v{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: blueviolet;
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(13, 17, 17);
+  border-radius: 10px;
+}
+
+.footer-box{
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.text-footer{
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.text-footer i{
+  margin-right: 5px;
+}
+
+.text-footer:hover{
+  color: blueviolet;
+}
+dialog{
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+
+dialog p{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.data-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.name{
+  position: relative;
+  padding: 10px;
+  height: 40px;
+  margin: 5px;
+}
+
+label{
+  position: absolute;
+  top: -12px;
+}
+
+input{
+  width: 100%;
+  background-color: black;
+  color: azure;
+  height: 25px;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.box-btn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-send{
+  width: 100px;
+  background-color: rgb(35, 40, 74);
+  height: 30px;
+  border-radius: 15px;
+  color: magenta;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-send:hover{
+  background-color: rgb(54, 54, 54);
+  color: aquamarine;
+}
