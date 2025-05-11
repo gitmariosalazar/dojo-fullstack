@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="login-page">
+      <div class="container">
+        <div class="header-login">
+          <div>
+            <p class="title-login">Login Page</p>
+            <i class="fa-regular fa-circle-user icon-user"></i>
+          </div>
+        </div>
+        <form action="#" class="sign-in" method="post">
+          <div class="form">
+            <div class="input-label">
+              <label class="icon-input">Email Address</label>
+              <div class="input-box">
+                <span class="icon-span"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="mariosalazar@gmail.com"
+                  class="input-text"
+                  required
+                />
+              </div>
+            </div>
+            <div class="input-label">
+              <label class="icon-input">Secret Key</label>
+              <div class="input-box">
+                <span class="icon-span"><i class="fa-solid fa-key"></i></span>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="****************"
+                  class="input-text"
+                  required
+                />
+                <span class="toggle-password">
+                  <i class="fa-regular fa-eye" id="toggle-eye"></i>
+                </span>
+              </div>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" class="input-check" />
+              <p>Keep the session active</p>
+            </div>
+            <div class="button-sign-in">
+              <button>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <p>Sign In</p>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="sign-up">
+          <p>Don't have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+        <hr />
+        <div class="continue-with">
+          <div class="cw">
+            <p>Continue with</p>
+            <div class="signin-options">
+              <a href="" class="option-icon">
+                <img src="./assets/icons/google.png" alt="" />
+              </a>
+              <a href="" class="option-icon">
+                <img src="./assets/icons/github-white.png" alt="" />
+              </a>
+              <a href="" class="option-icon">
+                <img src="./assets/icons/microsoft.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
