@@ -1,0 +1,426 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(3, 12, 27);
+  color: white;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside-left main aside-right"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: .4rem;
+  margin-left: .4rem;
+  margin-right: .4rem;
+}
+
+header {
+  grid-area: header;
+}
+
+img{
+  width: 45px;
+}
+
+/*NAV*/
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+  height: 50px;
+}
+
+.list-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list{
+  padding: 0;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.menu-list:hover{
+  color: tomato;
+}
+
+.logo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo p{
+  margin-left: 10px;
+  color: tomato;
+}
+
+
+.aside-left, .aside-right, main, footer {
+  grid-area: aside-left;
+  background-color: rgb(0, 8, 18);
+  border: none solid gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.figure{
+  min-width: 70px;
+  height: auto;
+}
+
+.aside-left {
+  grid-area: aside-left;
+  text-align: start;
+  overflow-y: auto;
+  max-height: 87vh;
+}
+
+.aside-left p{
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.aside-left::-webkit-scrollbar, .main-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.aside-left::-webkit-scrollbar-track, .main-container::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.aside-left::-webkit-scrollbar-thumb, .main-container::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 52, 57);
+  border-radius: 4px;
+  border: 2px solid #111;
+}
+
+.list-item{
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.list-item div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  display: block;
+  text-decoration: none;
+  color: skyblue;
+}
+
+.main-container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  text-decoration: none;
+  color: skyblue;
+}
+
+.list-item:hover, .list-item div:hover{
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+}
+
+/*MAIN*/
+.main-container{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, auto));
+  overflow-y: auto;
+  max-height: 86vh;
+
+}
+
+.main-container div{
+  gap: 5px;
+}
+
+.box-main-1{
+  grid-column: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.box-main-1 div{
+  text-align: center;
+  height: 90px;
+}
+
+.box-1-container, .box-main-3{
+  cursor: pointer;
+}
+
+.box-1-container p{
+  margin-top: 0;
+}
+
+.box-1-container img{
+  width: 70px;
+  height: auto;
+}
+
+.box-1-container:hover{
+  color: aqua;
+}
+
+.box-main-2 h3{
+  cursor: pointer;
+}
+
+.box-main-2 h3:hover, .box-main-2 a:hover, .author p:hover, .view-pdf:hover{
+  color: rgb(19, 83, 117);
+  text-decoration: underline;
+}
+
+.box-main-3 img{
+  width: 80px;
+  height: auto;
+}
+
+.box-main-2{
+  grid-column: 2/ span 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+.box-main-3{
+  grid-column: 3/ span -1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.box-main-4{
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+
+.author p{
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-star{
+  color: rgb(53, 53, 239);
+}
+
+.author p > span, .author i{
+  margin-left: 5px;
+}
+
+.box-main-9{
+  grid-column: 1/-1;
+  grid-row: 4;
+  width: 100%;
+}
+
+.list-school{
+  color: grey;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.list-school li{
+  list-style: lower-alpha;
+}
+
+.btn-list-options ul{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.btn-list-options li{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+
+.btn-list-options li:hover{
+  color: teal;
+  text-decoration: underline;
+}
+
+.doi{
+  display: flex;
+  justify-content: space-between;
+}
+
+.doi a{
+  color: cornflowerblue;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.doi i{
+  transform: rotate(-35deg);
+  margin-left: 5px;
+}
+
+.doi p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.fa-circle{
+  color: rgb(64, 255, 47);
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.doi a:hover, .content-article a:hover{
+  color: rgb(138, 51, 51);
+}
+
+article{
+  margin: 15px;
+}
+
+.hightlight li{
+  color: antiquewhite;
+}
+
+article p{
+  text-align: justify;
+  color: whitesmoke;
+}
+
+.aside-right {
+  grid-area: aside-right;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.head-art{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.head-art a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.content-article a{
+  color: steelblue;
+  font-size: 1.5rem;
+}
+
+.text-gray{
+  color: gray;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.text-author{
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+.view-pdf img{
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.view-pdf{
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content-article a, .text-gray{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  display: block;
+  text-decoration: none;
+}
+
+.head-art a:hover, .head-art:hover{
+  color: rgb(255, 0, 247);
+}
+
+.box-citations{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-citations p, .metrics p{
+  margin-top: -5px;
+}
+.figures {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: minmax(30px, auto);
+  gap: 5px;
+}
+
+footer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 12, 27);
+  height: 50px;
+}
+
+.footer-box-4{
+  grid-column: 1/-1;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
