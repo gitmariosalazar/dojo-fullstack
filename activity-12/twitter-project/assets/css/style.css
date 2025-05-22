@@ -1,0 +1,217 @@
+.container-page{
+  width: 100%;
+}
+
+.grok{
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.text-badge{
+  font-size: 100px;
+}
+
+.user{
+  text-decoration: none;
+}
+
+.button-post{
+  background-color: rgb(249, 250, 250);
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+.button-post:hover{
+  background-color: rgb(202, 196, 196);
+}
+
+.nav-item:hover, .icon-twitter:hover,.user:hover{
+  background-color: rgb(44, 44, 44);
+  width: auto;
+  border-radius: 25px;
+}
+
+.box-content{
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(44, 44, 44);
+}
+.trend-item{
+  cursor: pointer;
+}
+
+.trend p, .trend span{
+  font-size: 13px;
+}
+
+.trend-item i:hover{
+  border-radius: 100%;
+  background-color: rgb(44, 44, 44);
+}
+
+.box-head-trend img{
+  width:60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.item-follow-picture{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.follow-item-content img{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.follow-item-content a{
+  text-decoration: none;
+  color: white;
+}
+
+.follow-item-content a:hover{
+  color: royalblue;
+}
+
+.btn-tab{
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+.btn-tab:hover{
+  background-color: rgb(26, 25, 25);
+}
+
+hr{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 35px;
+}
+
+.input-post {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+.input-post:hover,
+.input-post:focus,
+.input-post:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.options-icon{
+  border-top: 2px solid rgb(44, 44, 44);
+  padding: 5px;
+}
+
+.options-icon i{
+  cursor: pointer;
+  padding: 5px;
+  color: blue;
+}
+.options-icon i:hover{
+  color: rgb(83, 80, 80);
+}
+
+.profile img{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.text-treed{
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.text-treed-info{
+  font-size: 14px;
+}
+
+.post-photo-video img{
+  width: 450px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.reaction-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.reaction-btn-end i:hover{
+  background-color: rgba(0, 247, 255, 0.178);
+  color: rgba(0, 247, 255, 0.795);;
+}
+
+.reaction-btn-end i, .reaction-btn a{
+  cursor: pointer;
+  color: rgb(0, 183, 255);
+}
+
+.icon-message i:hover{
+  color: rgb(255, 230, 0);
+  background-color: rgba(255, 217, 0, 0.329);
+}
+.icon-message:hover{
+  color: rgb(255, 230, 0);
+}
+
+.icon-reweet i:hover{
+  color: rgb(42, 160, 12);
+  background-color: rgba(56, 179, 8, 0.247);
+}
+.icon-reweet:hover{
+  color: rgb(42, 160, 12);
+}
+
+.icon-heart i:hover{
+  color: rgb(160, 29, 12);
+  background-color: rgba(179, 34, 8, 0.233);
+}
+.icon-heart:hover{
+  color: rgb(160, 29, 12);
+}
+
+.icon-chart i:hover{
+  color: rgb(98, 0, 255);
+  background-color: rgba(54, 8, 179, 0.349);
+}
+.icon-chart:hover{
+  color: rgb(98, 0, 255);
+}
+
+.text-link-reply{
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text-link-reply:hover{
+  color: blueviolet;
+}
+
